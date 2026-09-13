@@ -186,7 +186,7 @@ def build_controlled_groups(day_df, mover):
             )
         }
 
-        # Equal-weight the four magnitude bins
+        # Store bin-level quantities for equal-weighting across the twenty 1-percentile bins
         low_signal_returns.append(
             low["daily_return"].mean()
         )
@@ -203,7 +203,7 @@ def build_controlled_groups(day_df, mover):
             high["return_rank"].mean()
         )
 
-    # Require all four bins so each date is comparable
+    # Require all twenty 1-percentile bins so each date is comparable
     if len(bin_records) != 20:
         return None
 
@@ -376,7 +376,7 @@ for file in sorted(
                     high_mean - low_mean
                 )
 
-            # Require all four magnitude bins
+            # Require valid future returns in all twenty magnitude bins
             if len(bin_spreads) != 20:
                 continue
 
@@ -390,8 +390,8 @@ for file in sorted(
                 "horizon":
                     horizon,
 
-                # Equal-weight across the 4
-                # return-magnitude bins
+                # Equal-weight across the twenty
+                # 1-percentile return-magnitude bins
                 "low_avol_return":
                     np.mean(
                         bin_low_returns
