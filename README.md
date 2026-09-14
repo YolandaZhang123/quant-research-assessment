@@ -140,3 +140,24 @@ The research process is documented in:
 - `documentation/assistance_and_sources.md`
 
 The Final Report provides the polished research narrative, while `research_notebook.ipynb` provides the code-and-evidence trail supporting it.
+
+
+## Sources and AI Tool Disclosure
+
+### Academic Sources
+
+- Jegadeesh, N., and Titman, S. (1993). “Returns to Buying Winners and Selling Losers: Implications for Stock Market Efficiency.” The Journal of Finance, 48(1), 65–91.
+- Lee, C. M. C., and Swaminathan, B. (2000). “Price Momentum and Trading Volume.” The Journal of Finance, 55(5), 2017–2069.
+- Gokcen, U., and Post, T. (2018). “Trading Volume, Return Variability and Short-Term Momentum.” The European Journal of Finance, 24(3), 231–249.
+
+### Data
+
+The empirical analysis uses Massive U.S. equity market data, including daily market summary data and historical ticker reference data.
+
+### AI Assistance
+
+ChatGPT (OpenAI) was used for conceptual clarification, research-design discussion, Python coding/debugging assistance, statistical-method explanation, and organisation/editing of the research documentation. All code was run locally, outputs were inspected by the researcher, and the researcher remains responsible for understanding and defending the methodology, code, and conclusions. The Massive API credential was never shared with the AI.
+
+### External Code
+
+No external research repository or third-party trading strategy code was copied into this project. Standard package documentation was consulted where necessary.
